@@ -1,176 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architrons</title>
+    <title>Login Page</title>
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <style>
-     body {
-              background: linear-gradient(135deg, #1e3c72 0%, #5b76a4 50%, #1e3c72 100%);
-              color: white;
-              font-family: Arial, sans-serif;
-          }
-          .navbar {
-              margin-bottom: 50px;
-          }
-          .navbar-brand {
-              font-weight: bold;
-          }
-          .navbar-nav .nav-link {
-              color: white !important;
-          }
-          .login-container {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 80vh;
-          }
-          .login-box {
-              background: rgba(255, 255, 255, 0.1);
-              padding: 30px;
-              border-radius: 10px;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-              width: 300px;
-          }
-          .login-box h2 {
-              margin-bottom: 20px;
-          }
-          .form-control {
-              background: transparent;
-              border: none;
-              border-bottom: 1px solid white;
-              border-radius: 0;
-              color: white;
-          }
-          .form-control:focus {
-              box-shadow: none;
-              border-color: white;
-          }
-          .btn-primary {
-              background: linear-gradient(to right, #1e3c72, #2a5298);
-              border: none;
-              width: 100%;
-              padding: 10px;
-              border-radius: 20px;
-          }
-          .btn-primary:hover {
-              background: linear-gradient(to right, #2a5298, #1e3c72);
-          }
-          .form-check-label {
-              color: white;
-          }
-          .register-link {
-              color: white;
-              text-align: center;
-              display: block;
-              margin-top: 10px;
-          }
-          .building-image {
-              max-width: 100%;
-              height: auto;
-          }
+        body {
+            background: linear-gradient(135deg, #156AE2 0%, #094DAC 27%, #4A76B2 71%, #466A9B 86%, #14386B 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        .login-container h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+        .form-control {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            border-radius: 0;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: white;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #0033cc, #6699ff);
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(to right, #6699ff, #0033cc);
+        }
+        .forgot-password, .register {
+            color: white;
+            font-size: 12px;
+        }
+        .forgot-password {
+            float: right;
+        }
+        .register {
+            margin-top: 20px;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+        }
+    
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                ARCHITRONS
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BERANDA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LAYANAN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FITUR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LOGIN</a>
-                    </li>
-                </ul>
+    <div class="logo">ARCHITRONS</div>
+    <div class="home-icon">
+        <a class="text-white" href="home.html">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div>
+            <input class="form-control" placeholder="E-mail" type="email"/>
+            <input class="form-control" id="password" placeholder="Password" type="password"/>
+            <div class="forgot-password">
+                <a class="text-white" href="#">Lupa Password?</a>
+            </div>
+            <button class="btn btn-primary" type="submit">LOGIN</button>
+            <div class="register">
+                Belum memiliki akun? <a class="text-white" href="register.html">Daftar Sekarang</a>
             </div>
         </div>
-    </nav>   
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    </div>
 
-        <div class="container login-container">
-         <div class="row">
-          <div class="col-md-6">
-           <div class="login-box">
-            <h2>
-             LOGIN
-            </h2>
-            <form>
-             <div class="mb-3">
-              <label class="form-label" for="email">
-               E-mail
-              </label>
-              <div class="input-group">
-               <input class="form-control" id="email" placeholder="Enter your email" type="email"/>
-               <span class="input-group-text">
-                <i class="fas fa-envelope">
-                </i>
-               </span>
-              </div>
-             </div>
-             <div class="mb-3">
-              <label class="form-label" for="password">
-               Password
-              </label>
-              <div class="input-group">
-               <input class="form-control" id="password" placeholder="Enter your password" type="password"/>
-               <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                <i class="fas fa-eye" id="eyeIcon"></i>
-              </button>
-              </div>
-             </div>
-             <div class="mb-3 form-check">
-              <input class="form-check-input" id="rememberMe" type="checkbox"/>
-              <label class="form-check-label" for="rememberMe">
-               Remember
-              </label>
-              <a class="float-end" href="#" style="color: white;">
-               Forgot Password?
-              </a>
-             </div>
-             <button class="btn btn-primary" type="submit">
-              LOGIN
-             </button>
-            </form>
-            <a class="register-link" href="#">
-             Don't have an account? Register
-            </a>
-           </div>
-          </div>
-         </div>
-        </div>
 </body>
 </html>
-
-<script>
-const passwordInput = document.getElementById('password');
-    const togglePasswordButton = document.getElementById('togglePassword');
-    const eyeIcon = document.getElementById('eyeIcon');
-    
-    togglePasswordButton.addEventListener('click', () => {
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        eyeIcon.classList.remove('fa-eye');
-        eyeIcon.classList.add('fa-eye-slash');
-      } else {
-        passwordInput.type = 'password';
-        eyeIcon.classList.remove('fa-eye-slash');
-        eyeIcon.classList.add('fa-eye');
-      }
-    });
-</script>
