@@ -25,6 +25,7 @@
                 .hero-section h1 {
                     font-size: 2.5rem;
                     font-weight: bold;
+                    margin-top: 25vh;
                 }
                 .hero-section p {
                     font-size: 1.2rem;
@@ -35,21 +36,26 @@
                     text-align: center;
                     height: 100vh;
                 }
-                .services-section h2 {
+                .services-section h1 {
                     color: #1a73e8;
-                    margin-bottom: 30px;
+                    margin: 40px;
+                    font-weight: bolder;
                 }
                 .service-card {
                     background-color: white;
+                    color: #14386B;
                     border-radius: 10px;
                     padding: 20px;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                     margin: 10px;
+                    transition: background 0,3s ease;
                 }
-                .service-card i {
-                    font-size: 2rem;
-                    color: #1a73e8;
-                    margin-bottom: 10px;
+                .service-card:hover {
+                    background: linear-gradient(to top, #14386B 0%, #1F5BAE 69%, #2D6FCC 100%);
+                    color: #ffffff;
+                }
+                .service-card img {
+                    margin: 40px;
                 }
             </style>
         </head>
@@ -65,7 +71,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">BERANDA</a>
+                                <a class="nav-link" href="home.html">BERANDA</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#layanan">LAYANAN</a>
@@ -91,24 +97,24 @@
                             <p>Proyek Cerdas AI: Prediksi Biaya dan Durasi</p>
                         </div>
                         <div class="col-md-6">
-                            <img src="assets/home.png" alt="3D model of a modern building" class="img-fluid" height="500" width="500">
+                            <img src="assets/home.png" alt="3D model of a modern building" class="img-fluid" height="800" width="800">
                         </div>
                     </div>
                 </div>
             </div>
             <div id="layanan" class="services-section">
                 <div class="container">
-                    <h2>LAYANAN KAMI</h2>
+                    <h1>LAYANAN KAMI</h1>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="service-card">
-                                <i class="fas fa-calculator"></i>
+                                <img src="assets/estimate.png" alt="estimate" height="100" width="100">
                                 <p><strong>Architrons:</strong> Membantu anda dalam prediksi biaya proyek konstruksi secara akurat dan efisien</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="service-card">
-                                <i class="fas fa-clock"></i>
+                                <img src="assets/predict.png" alt="predict" height="100" width="100">
                                 <p><strong>Architrons:</strong> Membantu anda dalam prediksi durasi proyek konstruksi secara akurat dan efisien</p>
                             </div>
                         </div>
