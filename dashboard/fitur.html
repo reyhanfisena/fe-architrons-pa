@@ -86,50 +86,29 @@
             font-size: 24px;
             font-weight: bolder;
         }
-        .header .btn {
-            background: linear-gradient(135deg, #578FDD 0%, #2F5D9D 100%);
-            color: white;
+        .services-section {
+        background-color: #f5f7fa;
+        padding: 50px 0;
+        text-align: center;
+        height: 100vh;
         }
-        .card {
-            margin-top: 20px;
+        
+        .service-card {
+        background-color: white;
+        color: #14386B;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        transition: background 0,3s ease;
+        height: 40vh;
         }
-        .card-header {
-            background-color: #f8f9fa;
-            font-weight: bold;
+        .service-card:hover {
+        background: linear-gradient(to top, #14386B 0%, #1F5BAE 69%, #2D6FCC 100%);
+        color: #ffffff;
         }
-        .card-body {
-            display: flex;
-            justify-content: space-between;
-            height: 40vh;
-        }
-        .card-body .left{
-            padding: 30px;
-        }
-        .card-body .left, .card-body .right {
-            width: 48%;
-        }
-        .card-body .right {
-            background: linear-gradient(135deg, #578FDD 0%, #2F5D9D 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 5px;
-        }
-        .card-body .right h5 {
-            font-weight: bold;
-            margin: 20px;
-
-        }
-        .card-body .right p {
-            margin: 20px;
-        }
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .card-footer .btn {
-            background: linear-gradient(135deg, #578FDD 0%, #2F5D9D 100%);
-            color: white;
+        .service-card img {
+        margin: 40px;
         }
         .center{
             margin-top: 200px;
@@ -157,7 +136,7 @@
   Dashboard
  </span>
 </a>
-<a class="nav-link" href="projek.html">
+<a class="nav-link" href="#">
  <i class="bi bi-person-plus-fill">
  </i>
  <span>
@@ -182,40 +161,25 @@
   <div class="content" id="content">
    <div class="header">
     <img alt="Architrons Logo" height="50" src="../assets/logo.png" width="100"/>
-    <h1>
-     DASHBOARD
-    </h1>
-    <button class="btn" onclick="location.href='../dashboard/fitur.html'">
-        FITUR
-    </button>
    </div>
-   <div class="card">
-    <div class="card-header">
-     ARCHITRON'S
+   <div id="layanan" class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="service-card" onclick="location.href='../dashboard/input.html'">
+                    <img src="../assets/new.png" alt="estimate" height="100" width="100">
+                    <p>Input Proyek baru anda untuk menganalisis prediksi biaya dan durasi proyek</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-card" onclick="location.href='../dashboard/project.html'">
+                    <img src="../assets/open.png" alt="predict" height="100" width="100">
+                <p>Buka Proyek yang telah anda analisis</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card-body">
-     <div class="left">
-      <p>
-       Architrons adalah solusi cerdas berbasis AI yang memprediksi durasi dan biaya proyek konstruksi secara akurat. Dengan analisa data historis dan machine learning, Architrons membantu mengurangi risiko anggaran dan memastikan penyelesaian proyek sesuai rencana, sehingga meningkatkan efisiensi dan kepuasan semua pihak yang terlibat.
-      </p>
-     </div>
-     <div class="right">
-      <h5>
-       Apa Saja Yang Bisa Dilakukan Oleh ARCHITRONS
-      </h5>
-      <p>
-       Architrons menawarkan fitur untuk memprediksi durasi dan biaya secara akurat dan efisien dengan memasukkan beberapa data seperti jenis proyek tipe rumah, Luas tanah, luas bangunan, jumlah lantai, jumlah kamar tidur, jumlah kamar mandi, tipe atap, tipe dinding, tipe pondasi, material utama, dan Jumlah Tenaga.
-      </p>
-     </div>
-    </div>
-    <div class="card-footer">
-     <img alt="Architrons Logo" height="50" src="../assets/logo.png" width="100"/>
-     <p>Untuk lihat tipe rumah klik tombol disamping</p>
-     <button class="btn" onclick="location.href='../dashboard/tipe.html'"">
-        Tipe Rumah
-    </button>
-    </div>
-   </div>
+</div>
   </div>
   <script>
    function toggleSidebar() {
