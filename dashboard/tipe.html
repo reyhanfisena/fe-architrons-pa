@@ -115,34 +115,36 @@
             background: url(../assets/bg.jpeg);
         
         }
-        .card-body .left{
-            padding: 30px;
-            background: #2F5D9D;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
+        .section{
             margin: 40px;
-        }
-        .card-body .left img{
-            width: 100%;
-            height: 100%;
-            justify-content: right;
-        }
-        .card-body .left, .card-body .right {
-            width: 48%;
-        }
-        .card-body .right {
-            padding: 30px;
-            background: #2F5D9D;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 40px;
+            display: flex;
         }
 
-        .card-body .right img{
-            width: 100%;
-            height: 100%;
+        .txt-left{
+            padding: 30px;
+            background: #2F5D9D;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px;
+            text-align: center;
+        }
+        .img-right{
+            justify-content: right;
+        }
+        .section .txt-left, .section .txt-right, .section .img-right, .section .img-left {
+            width: 48%;
+        }
+        .txt-right {
+            padding: 30px;
+            background: #2F5D9D;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px;
+            text-align: center;
+        }
+        .img-left{
             justify-content: left;
         }
         .card-footer {
@@ -223,8 +225,8 @@ Panduan Konstruksi dan Detail Penting dalam Membangun Rumah
     <p style="color: black;">Pembangunan rumah tidak hanya soal desain, tetapi juga mencakup elemen konstruksi yang perlu direncanakan secara matang untuk memastikan keamanan, kenyamanan, dan efisiensi hunian. Mari kita bahas komponen utama dalam konstruksi rumah yang perlu diperhatikan.</p>
    
     <div class="card-body">
-
-        <div class="card-body left">
+        <div class="section">
+            <div class="txt-left">
             <h2>TAHAP 1</h2>
             <p>Perencanaan dan Desain Awal</p>
             <p>Proses membangun rumah dimulai dengan tahap perencanaan dan desain. Tahap ini sangat krusial karena menentukan tata letak, ukuran ruangan, dan orientasi bangunan untuk pencahayaan alami dan sirkulasi udara. Beberapa hal yang perlu diperhatikan pada tahap perencanaan ini adalah:</p>
@@ -233,13 +235,37 @@ Panduan Konstruksi dan Detail Penting dalam Membangun Rumah
             <li>Gaya Arsitektur: Pilih gaya yang sesuai dengan selera, misalnya minimalis, modern, klasik, atau tradisional.</li>
             <li>Anggaran dan Biaya: Siapkan anggaran dengan mempertimbangkan biaya bahan bangunan, tenaga kerja, dan peralatan.</li>
             </ul>
-            <img src="../assets/img-1.png" alt="construct">
-
+            </div>
+            <div class="img-right">
+            <img style="height: 60vh; width: auto;" src="../assets/img-1.jpeg" alt="construct">
+            </div>
         </div>
         
-        <div class="card-body right">
+        <div class="section">
+            <div class="img-left"></div>
+            <div class="txt-right">
+                <h2>TAHAP 2</h2>
+                <p>Pemilihan lokasi dan Persiapan Lahan</p>
+                <p>Lokasi merupakan salah satu faktor penting dalam kenyamanan rumah. Pastikan lokasi rumah dekat dengan fasilitas umum dan memiliki akses jalan yang baik. Selain itu, lakukan persiapan lahan dengan melakukan survei tanah, menggali fondasi, serta membersihkan lahan untuk memastikan konstruksi berjalan lancar.</p>
+            </div>
         </div>
 
+        <div class="section">
+            <div class="txt-left">
+                <h2>TAHAP 3</h2>
+                <p>Fondasi yang Kokoh</p>
+                <p>Fondasi adalah elemen yang paling penting dalam konstruksi rumah karena menopang seluruh bangunan. Jenis fondasi yang dipilih harus sesuai dengan kondisi tanah dan desain rumah:</p>
+                <ul>
+                    <li>Fondasi Cakar Ayam: Cocok untuk tanah yang lunak dan rumah berlantai dua atau lebih.</li>
+                    <li>Fondasi Batu Kali: Lebih umum untuk rumah sederhana dengan satu lantai. </li>
+                    <li>Beton Bertulang: Cocok digunakan untuk berbagai jenis konstruksi yang memerlukan kekuatan, ketahanan, dan daya tahan yang tinggi</li>
+                </ul>
+                <p>Pastikan fondasi dibangun dengan material berkualitas tinggi untuk menjamin ketahanan jangka panjang.</p>
+            </div>
+            <div class="img-right">
+                <img style="height: 60vh; width: auto;" src="../assets/img-2.jpeg" alt="pondation"
+            </div>
+        </div>
     </div>
 
 </div>
