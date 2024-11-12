@@ -97,41 +97,53 @@
         }
         .card {
             margin-top: 20px;
-            border: 1px solid #3b5998;
-            padding: 20px;
+            border: 2px solid #3b5998;
         }
         .card-header {
             background: linear-gradient(120deg, #578FDD 0%, #2F5D9D 100%);
-            border: 1px solid #3b5998;
-            border-radius: 20px;
             color: white;
-            padding: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-inline: 20%;
+            margin-bottom: 30px;
+        }
+        .card p{
             text-align: center;
         }
         .card-body {
-            display: flex;
-            justify-content: space-between;
-            height: 40vh;
+            align-items: center;
+            background: url(../assets/bg.jpeg);
+        
         }
         .card-body .left{
             padding: 30px;
+            background: #2F5D9D;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px;
+        }
+        .card-body .left img{
+            width: 100%;
+            height: 100%;
+            justify-content: right;
         }
         .card-body .left, .card-body .right {
             width: 48%;
         }
         .card-body .right {
-            background: linear-gradient(135deg, #578FDD 0%, #2F5D9D 100%);
-            color: white;
             padding: 30px;
-            border-radius: 5px;
+            background: #2F5D9D;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px;
         }
-        .card-body .right h5 {
-            font-weight: bold;
-            margin: 20px;
 
-        }
-        .card-body .right p {
-            margin: 20px;
+        .card-body .right img{
+            width: 100%;
+            height: 100%;
+            justify-content: left;
         }
         .card-footer {
             display: flex;
@@ -201,12 +213,36 @@
     </button>
    </div>
 
-   <div class="card">
+<div class="card">
     <div class="card-header">
         <h2>Menyambut Rumah Impian Anda:</h2> 
-<p>Panduan Konstruksi dan Detail Penting dalam Membangun Rumah</p>
+Panduan Konstruksi dan Detail Penting dalam Membangun Rumah
     </div>
-   </div>
+
+    <p style="color: #8F8484;">Selamat datang di dashboard kami! Di sini, Anda akan menemukan segala sesuatu yang Anda butuhkan untuk merancang, membangun, dan memahami detail teknis dalam konstruksi rumah impian Anda. Memiliki hunian ideal adalah impian banyak orang, dan kami hadir untuk membantu mewujudkannya.</p>
+    <p style="color: black;">Pembangunan rumah tidak hanya soal desain, tetapi juga mencakup elemen konstruksi yang perlu direncanakan secara matang untuk memastikan keamanan, kenyamanan, dan efisiensi hunian. Mari kita bahas komponen utama dalam konstruksi rumah yang perlu diperhatikan.</p>
+   
+    <div class="card-body">
+
+        <div class="card-body left">
+            <h2>TAHAP 1</h2>
+            <p>Perencanaan dan Desain Awal</p>
+            <p>Proses membangun rumah dimulai dengan tahap perencanaan dan desain. Tahap ini sangat krusial karena menentukan tata letak, ukuran ruangan, dan orientasi bangunan untuk pencahayaan alami dan sirkulasi udara. Beberapa hal yang perlu diperhatikan pada tahap perencanaan ini adalah:</p>
+            <ul>
+            <li>Penentuan Kebutuhan Ruang: Mulai dengan kebutuhan dasar seperti jumlah kamar tidur, kamar mandi, ruang tamu, dapur, dan ruang tambahan lainnya.</li>
+            <li>Gaya Arsitektur: Pilih gaya yang sesuai dengan selera, misalnya minimalis, modern, klasik, atau tradisional.</li>
+            <li>Anggaran dan Biaya: Siapkan anggaran dengan mempertimbangkan biaya bahan bangunan, tenaga kerja, dan peralatan.</li>
+            </ul>
+            <img src="../assets/img-1.png" alt="construct">
+
+        </div>
+        
+        <div class="card-body right">
+        </div>
+
+    </div>
+
+</div>
 
   <script>
    function toggleSidebar() {
