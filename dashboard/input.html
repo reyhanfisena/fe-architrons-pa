@@ -111,6 +111,10 @@
         .form-group {
             margin-bottom: 15px;
         }
+        .btn {
+            background: linear-gradient(135deg, #578FDD 0%, #2F5D9D 100%);
+            color: white;
+        }
   </style>
  </head>
  <body>
@@ -189,7 +193,7 @@
       </div>
      </div>
      <div class="form-group row">
-        <label class="col-sm3 col-form-label" for="jumlahLantai">
+        <label class="col-sm-3 col-form-label" for="jumlahLantai">
             Jumlah Lantai
         </label>
         <div class="col-sm-9">
@@ -197,7 +201,7 @@
         </div>
      </div>
      <div class="form-group row">
-        <label class="col-sm3 col-form-label" for="jumlahKM">
+        <label class="col-sm-3 col-form-label" for="jumlahKM">
             Jumlah Kamar Mandi 
         </label>
         <div class="col-sm-9">
@@ -237,14 +241,6 @@
         </div>
      </div>
      <div class="form-group row">
-        <label class="col-sm-3 col-form-label" for="materialUtama">
-            Material Utama
-        </label>
-        <div class="col-sm-9">
-            <input class="form-control" id="materialUtama" placeholder="Masukkan Jenis Material Utama" type="text">
-        </div>
-     </div>
-     <div class="form-group row">
         <label class="col-sm-3 col-form-label" for="jumlahTK">
             Jumlah Tenaga Kerja
         </label>
@@ -253,6 +249,9 @@
         </div>
      </div>
     </form>
+    <button class="btn" onclick="location.href='../dashboard/project.html'">
+        SUBMIT
+    </button>
    </div>
   </div>
   <script>
